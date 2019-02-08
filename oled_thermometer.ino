@@ -54,7 +54,8 @@ void prepare_display() {
 
 void draw(void) {
   // graphic commands to redraw the complete screen should be placed here
-  u8g.setFont(u8g_font_profont29);
+//  u8g.setFont(u8g_font_profont29);
+u8g.setFont(u8g_font_helvR18);
 
   if (!last_result) {
     u8g.drawStr(0, 24, "NO DATA");
